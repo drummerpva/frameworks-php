@@ -1,0 +1,11 @@
+<h1>Agenda de Contatos</h1>
+<a href="./add">Adicionar Contato</a>
+<ul>
+    <?php foreach($lista as $l){
+        ?>
+    <li><?php echo $l['nome']." - ".$l['telefone'];?> - <a href="./edit/<?php echo $l['id'];?>">Editar</a>
+        - <a href="./del/<?php echo $l['id'];?>">Excluir</a></li>
+            <?php
+    }
+?>
+</ul>
